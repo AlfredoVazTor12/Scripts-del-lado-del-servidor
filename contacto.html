@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="origenes.html">Orígenes</a></li>
+            <li><a href="evolucion.html">Evolución</a></li>
+            <li><a href="tecnologias.html">Tecnologías</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Déjanos tus comentarios</h2>
+        <p>Rellena el siguiente formulario para ponerte en contacto con nosotros.</p>
+        
+        <form onsubmit="return validarFormulario()">
+            <div>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre">
+                <span class="error" id="error-nombre"></span>
+            </div>
+            <br>
+            <div>
+                <label for="email">Correo:</label><br>
+                <input type="email" id="email" name="email">
+                <span class="error" id="error-email"></span>
+            </div>
+            <br>
+            <div>
+                <label for="edad">Edad:</label><br>
+                <input type="number" id="edad" name="edad">
+                <span class="error" id="error-edad"></span>
+            </div>
+            <br>
+            <div>
+                <label>Tema de interés:</label><br>
+                <input type="radio" id="tema1" name="tema" value="historia" checked>
+                <label for="tema1">Historia</label>
+                <input type="radio" id="tema2" name="tema" value="tecnologia">
+                <label for="tema2">Tecnología</label>
+            </div>
+            <br>
+            <div>
+                <label for="opcion">¿Qué te gustó más?:</label><br>
+                <select id="opcion" name="opcion">
+                    <option value="">Selecciona...</option>
+                    <option value="origenes">Los orígenes</option>
+                    <option value="evolucion">La evolución</option>
+                </select>
+                <span class="error" id="error-opcion"></span>
+            </div>
+            <br>
+            <div>
+                <label for="comentarios">Comentarios:</label><br>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+            </div>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; Jorge Alfredo Vázquez Torres</p>
+    </footer>
+
+</body>
+</html>
